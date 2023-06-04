@@ -1,0 +1,15 @@
+@use '/src/static/styles/variables.scss' as var;
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', serif;
+
+  &__content {
+    flex: 1 1 auto;
+    padding: 32px;
+    background-color: var.$primary-color;
+  }
+}

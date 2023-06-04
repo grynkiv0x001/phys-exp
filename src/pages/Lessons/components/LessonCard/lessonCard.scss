@@ -1,0 +1,25 @@
+@use '/src/static/styles/variables.scss' as var;
+
+.lesson-card {
+  max-height: 170px;
+
+  &__image {
+    height: 100%;
+    border: 2px solid #415053;
+    border-radius: 30px;
+    transition: .4s border-color ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      border-color: #F9C651;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: var.$text-primary;
+  }
+}

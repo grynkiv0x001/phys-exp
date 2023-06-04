@@ -1,0 +1,16 @@
+@use '/src/static/styles/variables.scss' as var;
+
+.footer {
+  min-height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var.$accent-color;
+  color: #fff;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

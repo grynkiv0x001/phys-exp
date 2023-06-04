@@ -1,0 +1,40 @@
+@use '/src/static/styles/variables.scss' as var;
+
+.dashboard {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  @media screen and (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  &__title {
+    color: var.$text-primary;
+    font-style: italic;
+    font-size: 52px;
+    text-align: center;
+
+    @media screen and (max-width: 720px) {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    color: var.$text-primary;
+    font-size: 44px;
+    text-align: center;
+
+    @media screen and (max-width: 720px) {
+      font-size: 24px;
+    }
+  }
+}

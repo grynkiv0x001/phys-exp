@@ -1,0 +1,61 @@
+@use '/src/static/styles/variables.scss' as var;
+
+$primary-color: #F9C651;
+$secondary-color: #363030;
+
+.lessons-carousel {
+  position: relative;
+  max-width: 820px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: $primary-color;
+    font-size: 32px;
+  }
+
+  &__left-arrow,
+  &__right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__left-arrow {
+    left: 0;
+  }
+
+  &__right-arrow {
+    right: -5px;
+    transform: translateY(30%) rotate(180deg);
+  }
+
+  &__list {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__item {
+    list-style: none;
+
+    min-width: 300px;
+    height: 200px;
+
+    border: 5px solid $primary-color;
+    border-radius: 30px;
+    background-color: $secondary-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var.$text-primary;
+  }
+}

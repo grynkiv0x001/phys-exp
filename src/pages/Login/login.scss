@@ -1,0 +1,15 @@
+@use '/src/static/styles/variables.scss' as var;
+
+.login {
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var.$text-primary;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+  }
+}
