@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-import './Wrapper.scss';
+import './wrapper.scss';
 
 const Wrapper = (props) => {
   const { children } = props;
